@@ -113,28 +113,28 @@ h6 {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
-          }
-        #toc li {
-          list-style: none;
-          margin: 5px 0;
-        }
-        #toc a {
-          text-decoration: none;
-          color: #333;
-        }
-        .muc-luc li {
-            list-style: none;
-            margin: 5px 0;
-            cursor: pointer;
-        }
+}
+#toc li {
+    list-style: none;
+    margin: 5px 0;
+}
+#toc a {
+    text-decoration: none;
+    color: #333;
+}
+.muc-luc li {
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
 
-        .muc-luc li:hover {
-            background-color: #f0f0f0;
-        }
+.muc-luc li:hover {
+    background-color: #f0f0f0;
+}
 
-        .muc-luc li.active {
-            color: red;
-        }
-        .muc-luc {
-            font-size: 26px;
-        }
+.muc-luc li.active {
+    color: red;
+}
+.muc-luc {
+    font-size: 26px;
+}
