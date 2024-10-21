@@ -28,72 +28,143 @@
         <img src="./asset/banner.webp" alt="" width="100%">
       </div>
     </header>
+    <nav id="toc">
+        <h1><strong>Mục lục:</strong></h1>
+        <ul class="muc-luc">
+          <li onclick="setActive(this)"><a href="#section1">1)Thần Trùng - The Death</a></li>
+          <li onclick="setActive(this)"><a href="#section2">2)7554</a></li>
+          <li onclick="setActive(this)"><a href="#section3">3)Blood Field - Cỏ Máu</a></li>
+          <li onclick="setActive(this)"><a href="#section4">4)The Reed Field - Đồng Cỏ Lau</a></li>
+          <li onclick="setActive(this)"><a href="#section5">5)The Scourge - Tai Ương</a></li>
+        </ul>
+      </nav>
+      <script>
+        function setActive(element) {
+            // Xóa class 'active' khỏi tất cả các phần tử li
+            var elements = document.getElementsByClassName("muc-luc");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("active");
+            }
 
+            // Thêm class 'active' vào phần tử vừa được click
+            element.classList.add("active");
+
+            // Tìm và scroll đến phần nội dung tương ứng (nếu cần)
+            var targetId = element.textContent.replace(/\s+/g, '-').toLowerCase();
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo(0, targetElement.offsetTop);
+            }
+        }
+    </script>
     <main class="main">
-        <h1>REVIEW 1 SỐ GAME:</h1>
-        <h6>1)Thần Trùng - The Death</h2>
+        <section class="loi_ket">
+            <ul style="list-style-type: disc;">
+        <li><strong>REVIEW MỘT SỐ GAME:</strong></li>
+         </ul>
+         </section>
+         <section id="section1">
+        <h1>1)Thần Trùng - The Death</h1>
+        </section>
         <div class="list-game">
             <section class="item-image">
                 <a href=""class>
                     <img src="./asset/thần trùng.jpg" alt="" width="600px" />
                 </a>
             </section>
-            <section>
-                <h3>The Death còn được biết đến với cái tên Thần Trùng mở ra một thế giới kinh dị phiêu lưu do chính tay các nhà sáng tạo Việt Nam nghĩ ra. Đặt bối cảnh trong những ngõ ngách của Hà Nội năm 2021, trò chơi này đưa người chơi vào cuộc sống của một thanh niên đang đối mặt với những sự kiện bí ẩn, đầy rẫy những câu hỏi chưa có lời giải.</h1>
-                <h2>Cốt truyện của game xoay quanh truyền thuyết dân gian về Thần Trùng, một hung thần chuyên tra tấn người chết vào giờ trùng tang để họ khai nhân thân họ hàng, từ đó Thần Trùng sẽ tới và bắt linh hồn họ đi, gây ra hiện tượng trùng tang.</h2>
+            <section class="van_ban">
+                <ul style="list-style-type:square">
+                <li>The Death còn được biết đến với cái tên Thần Trùng mở ra một thế giới kinh dị phiêu lưu do chính tay các nhà sáng tạo Việt Nam nghĩ ra. Đặt bối cảnh trong những ngõ ngách của Hà Nội năm 2021, trò chơi này đưa người chơi vào cuộc sống của một thanh niên đang đối mặt với những sự kiện bí ẩn, đầy rẫy những câu hỏi chưa có lời giải.</li>
+                <li>Cốt truyện của game xoay quanh truyền thuyết dân gian về Thần Trùng, một hung thần chuyên tra tấn người chết vào giờ trùng tang để họ khai nhân thân họ hàng, từ đó Thần Trùng sẽ tới và bắt linh hồn họ đi, gây ra hiện tượng trùng tang.</li>
+                </ul>
             </section>
             <section>
                 <a href=""class="item-image1">
                     <img src="./asset/90057b7c-6034-4bc0-bcf5-b679a6d1c2e6.gif" alt="" width="400px" />
                 </a>
-                <h6>2)7554</h1>
+                <section id="section2">
+                <h1>2)7554</h1>
+                </section>
                 <a href=""class="item-image1">
                     <img src="./asset/7554.jpg" alt="" width="600px" />
                 </a>
-                <h2>7554 lấy bối cảnh Việt Nam trong giai đoạn chống Pháp 1946 - 1954. Bắt đầu với ngày Toàn quốc kháng chiến và kết thúc bằng chiến thắng Điện Biên Phủ. Ngươi chơi được hóa thân thành 4 chiến sĩ Việt trong trận chiến Điện Biên Phủ bao gồm Lưu Trọng Hà, Nguyễn Thế Vinh và hai anh em: Hoàng Đăng Bình, Hoàng Đăng An.</h2>
-                <h3>Mỗi nhân vật sẽ tham gia vào một hoặc hai chiến dịch quan trọng có thật trong lich sử để tạo tiền đề thuận lợi cho trận quyết định tại Điện Biên Phủ. Trải qua nhiều trận đánh đầy cam go do địch quá đông và được trang bị vũ khí mạnh, hiện đại nhưng với lòng yêu nước nồng nàn đã tiếp thêm sức mạnh cho bộ đội ta giành chiến thắng, mang lại hòa bình cho Tổ quốc.</h3>
+                <section class="van_ban">
+                    <ul style="list-style-type:square">
+                <li>7554 lấy bối cảnh Việt Nam trong giai đoạn chống Pháp 1946 - 1954. Bắt đầu với ngày Toàn quốc kháng chiến và kết thúc bằng chiến thắng Điện Biên Phủ. Ngươi chơi được hóa thân thành 4 chiến sĩ Việt trong trận chiến Điện Biên Phủ bao gồm Lưu Trọng Hà, Nguyễn Thế Vinh và hai anh em: Hoàng Đăng Bình, Hoàng Đăng An.</li>
+                <li>Mỗi nhân vật sẽ tham gia vào một hoặc hai chiến dịch quan trọng có thật trong lich sử để tạo tiền đề thuận lợi cho trận quyết định tại Điện Biên Phủ. Trải qua nhiều trận đánh đầy cam go do địch quá đông và được trang bị vũ khí mạnh, hiện đại nhưng với lòng yêu nước nồng nàn đã tiếp thêm sức mạnh cho bộ đội ta giành chiến thắng, mang lại hòa bình cho Tổ quốc.</li>
+                </ul>
+            </section>
                 <a href=""class="item-image1">
                     <img src="./asset/rauden.jpg" alt="" width="500px" />
                 </a>
             </section>
-            <section>
-                <h6>3)Blood Field - Cỏ Máu</h1>
+            <section id="section3">
+                <h1>3)Blood Field - Cỏ Máu</h1>
+                </section>
+                <section>
                 <a href=""class="item-image1">
                     <img src="./asset/cỏ máu.jpg" alt="" width="800px" />
                 </a>
-                <h2>Tái hiện lại những câu chuyện dân gian kinh dị qua một thế giới game đậm chất Việt Nam. Thời điểm mà bí ẩn và tội ác được bao phủ bởi bức màn của thần thoại và văn hóa dân tộc. Trò chơi này cho bạn cơ hội hóa thân thành Minh, một nhân vật tình cờ khám phá ra bí mật đen tối đằng sau cái chết của một quý cô, qua đó dẫn dắt bạn vào một hành trình đầy ắp những phát hiện ghê rợn.</h1>
-                <h3>Một đêm mưa bão ở làng quê Việt Nam, nhân vật Minh đi bộ trên con đường quen thuộc nhưng cảm thấy có gì đó lạ lùng. Minh vô tình phát hiện một ngôi nhà nhỏ tại một ngã rẽ. Khi đang tiến gần hơn, cơn gió mạnh làm cây dù bay vào trong khuôn viên của ngôi nhà. Dù do dự trước vẻ ngoài ảm đạm của ngôi nhà, Minh vẫn quyết định vào bên trong để lấy lại chiếc dù.</h2>
-                <h4>Trong ngôi nhà, không có ai cả nhưng Minh lại phát hiện một vết máu dẫn đến cửa sau. Đến đó, anh chợt nhìn thấy một con mắt khổng lồ đang nhìn chằm chằm vào mình. Khi cánh cửa đóng sập, Minh bị mắc kẹt bên trong. Trong lúc khám phá, Minh tìm thấy hai mảnh thư cũ trên bàn thờ cùng hình ảnh của một người đã khuất.</h3>
-                <h5>Chưa kịp phản ứng, một bóng ma bất ngờ xuất hiện và tấn công Minh, khiến anh ngất xỉu. Khi tỉnh lại, Minh bắt đầu tìm hiểu bí mật đằng sau ngôi nhà ma ám này. Ai là hồn ma trong ngôi nhà? Những bí mật nào khác vẫn còn được giấu kín? Tất cả sẽ được khám phá trong Blood Field - Cỏ Máu game.</h4>
-                    <a href=""class="item-image1">
+                <section class="van_ban">
+                    <ul style="list-style-type:square">
+                <li>Tái hiện lại những câu chuyện dân gian kinh dị qua một thế giới game đậm chất Việt Nam. Thời điểm mà bí ẩn và tội ác được bao phủ bởi bức màn của thần thoại và văn hóa dân tộc. Trò chơi này cho bạn cơ hội hóa thân thành Minh, một nhân vật tình cờ khám phá ra bí mật đen tối đằng sau cái chết của một quý cô, qua đó dẫn dắt bạn vào một hành trình đầy ắp những phát hiện ghê rợn.</li>
+                <li>Một đêm mưa bão ở làng quê Việt Nam, nhân vật Minh đi bộ trên con đường quen thuộc nhưng cảm thấy có gì đó lạ lùng. Minh vô tình phát hiện một ngôi nhà nhỏ tại một ngã rẽ. Khi đang tiến gần hơn, cơn gió mạnh làm cây dù bay vào trong khuôn viên của ngôi nhà. Dù do dự trước vẻ ngoài ảm đạm của ngôi nhà, Minh vẫn quyết định vào bên trong để lấy lại chiếc dù.</li>
+                <li>Trong ngôi nhà, không có ai cả nhưng Minh lại phát hiện một vết máu dẫn đến cửa sau. Đến đó, anh chợt nhìn thấy một con mắt khổng lồ đang nhìn chằm chằm vào mình. Khi cánh cửa đóng sập, Minh bị mắc kẹt bên trong. Trong lúc khám phá, Minh tìm thấy hai mảnh thư cũ trên bàn thờ cùng hình ảnh của một người đã khuất.</li>
+                <li>Chưa kịp phản ứng, một bóng ma bất ngờ xuất hiện và tấn công Minh, khiến anh ngất xỉu. Khi tỉnh lại, Minh bắt đầu tìm hiểu bí mật đằng sau ngôi nhà ma ám này. Ai là hồn ma trong ngôi nhà? Những bí mật nào khác vẫn còn được giấu kín? Tất cả sẽ được khám phá trong Blood Field - Cỏ Máu game.</li>
+                </ul>
+            </section>
+                <a href=""class="item-image1">
                         <img src="./asset/9f1ade35-e326-4375-a02e-39729ce3915f.gif" alt="" width="400px" />
                     </a>
             </section>
-            <section>
-                <h6>4)The Reed Field - Đồng Cỏ Lau</h1>
+            <section id="section4">
+                <h1>4)The Reed Field - Đồng Cỏ Lau</h1>
+                </section>
+                <section>
                 <a href=""class="item-image1">
                     <img src="./asset/dong co lau.jpg" alt="" width="800px" />
                 </a>
-                <h2>The Reed Field mở ra một thế giới kinh dị mênh mông giữa đồng cỏ lau miền Nam Bộ, nơi mà không gian vắng lặng chỉ được phá vỡ bởi tiếng gõ mõ rợn người và tiếng khóc ai oán. Nhà phát hành của trò chơi, Quasar Art đã tạo nên một khung cảnh đậm chất kinh dị ngay từ trailer đầu tiên, hứa hẹn một trải nghiệm ám ảnh.</h2>
-                <h3>Trò chơi lấy đề tài kinh dị tâm linh từ những câu chuyện truyền miệng hay truyền thuyết dân gian ở miền Tây Nam Bộ. Đồng cỏ lau hứa hẹn mang đến trải nghiệm kinh dị nhưng không kém phần gần gũi với chúng ta, đặc biệt là những người sinh ra ở miền Nam, lớn lên với những câu chuyện kinh dị được những người thân kể lại.</h3>
+                <section class="van_ban">
+                    <ul style="list-style-type:square">
+                <li>The Reed Field mở ra một thế giới kinh dị mênh mông giữa đồng cỏ lau miền Nam Bộ, nơi mà không gian vắng lặng chỉ được phá vỡ bởi tiếng gõ mõ rợn người và tiếng khóc ai oán. Nhà phát hành của trò chơi, Quasar Art đã tạo nên một khung cảnh đậm chất kinh dị ngay từ trailer đầu tiên, hứa hẹn một trải nghiệm ám ảnh.</li>
+                <li>Trò chơi lấy đề tài kinh dị tâm linh từ những câu chuyện truyền miệng hay truyền thuyết dân gian ở miền Tây Nam Bộ. Đồng cỏ lau hứa hẹn mang đến trải nghiệm kinh dị nhưng không kém phần gần gũi với chúng ta, đặc biệt là những người sinh ra ở miền Nam, lớn lên với những câu chuyện kinh dị được những người thân kể lại.</li>
+                    </ul>
+            </section>
             </section>
             <section>
                 <a href=""class="item-image1">
                     <img src="./asset/diddy.jpg" alt="" width="600px" />
                 </a>
+            </section>
+                <section id="section5">
                 <h1>5)The Scourge - Tai Ương</h1>
+                </section>
+                <section>
                 <a href=""class="item-image1">
                     <img src="./asset/tai uong.jpg" alt="" width="800px" />
                 </a>
-                <h2>Cuối cùng trong danh sách game việt hóa này là The Scourge – Tai Ương, sản phẩm game kinh dị đến từ nhà phát hành Beaztek Studio. Điểm nổi bật của trò chơi này là việc tái hiện màu sắc và bối cảnh thuần Việt, cùng với cốt truyện sâu sắc khai thác từ những câu chuyện kinh dị đô thị mà nhiều người Việt đã quen thuộc. Người chơi sẽ bị cuốn vào một thế giới đầy rẫy những bí ẩn và hiện tượng siêu nhiên, nơi mỗi quyết định có thể ảnh hưởng đến số phận của mình.</h2>
-                <h3>một game kinh dị nhập vai Puzzle RPG, đưa bạn vào trái tim của Sài Gòn (Việt Nam) qua những truyền thuyết đô thị từ những năm 1990. Bạn sẽ theo dõi số phận thê thảm của một gia đình và nhân vật chính, người đã mắc phải những sai lầm trong quá khứ và giờ đây đang bị ám ảnh bởi một thế lực ma quái.</h3>
+                <section class="van_ban">
+                    <ul style="list-style-type:square">
+                <li>Cuối cùng trong danh sách game việt hóa này là The Scourge – Tai Ương, sản phẩm game kinh dị đến từ nhà phát hành Beaztek Studio. Điểm nổi bật của trò chơi này là việc tái hiện màu sắc và bối cảnh thuần Việt, cùng với cốt truyện sâu sắc khai thác từ những câu chuyện kinh dị đô thị mà nhiều người Việt đã quen thuộc. Người chơi sẽ bị cuốn vào một thế giới đầy rẫy những bí ẩn và hiện tượng siêu nhiên, nơi mỗi quyết định có thể ảnh hưởng đến số phận của mình.</li>
+                <li>Một game kinh dị nhập vai Puzzle RPG, đưa bạn vào trái tim của Sài Gòn (Việt Nam) qua những truyền thuyết đô thị từ những năm 1990. Bạn sẽ theo dõi số phận thê thảm của một gia đình và nhân vật chính, người đã mắc phải những sai lầm trong quá khứ và giờ đây đang bị ám ảnh bởi một thế lực ma quái.</li>
+            </ul>
             </section>
-            <section>
-                <h1>Tạm Kết</h1>
-                <h2>Trên đây là top những tựa game việt hóa thành công nhất đến từ Việt Nam tính đến thời điểm hiện tại. Mỗi tựa game đều sở hữu cách chơi, cách truyền tải và thể loại khác nhau cho nên bạn có thể dễ dàng lựa chọn theo sở thích của mình. Tất nhiên, các tựa game mới sẽ được cập nhật liên tục trong tương lai gần để giúp ngành công nghiệp game của nước ta ngày càng phát triển.</h2>
             </section>
-            <section>
-                <h1>Cảm ơn những thành viên đã làm ra trang web này</h1>
+            <section class="loi_ket">
+                <ul style="list-style-type: disc;">
+                <li><strong>Tạm Kết</strong></li>
+                </ul>
+                <section class="van_ban">
+                    <ul style="list-style-type:square">
+                <li>Trên đây là top những tựa game việt hóa thành công nhất đến từ Việt Nam tính đến thời điểm hiện tại. Mỗi tựa game đều sở hữu cách chơi, cách truyền tải và thể loại khác nhau cho nên bạn có thể dễ dàng lựa chọn theo sở thích của mình.</li>
+                <li>Tất nhiên, các tựa game mới sẽ được cập nhật liên tục trong tương lai gần để giúp ngành công nghiệp game của nước ta ngày càng phát triển.</li>
+            </ul>
+            </section>
+            </section>
+            <section class="loi_ket">
+                <ul style="list-style-type: disc;">
+                <li><strong>Cảm ơn những thành viên đã làm ra trang web này</strong></li>
+                </ul>
             </section>
             <section>
                 <a href=""class="item-image2">
@@ -101,7 +172,9 @@
                 </a>
             </section>
             <section class="text-member">
-                <h2 class>Hùng(coder), Quang(designer, ý tưởng), Phước(biên tập, ý tưởng), Hoàn(nội dung).</h2>
+                <ul style="list-style: circle;">
+                <li>Hùng(coder), Quang(designer, ý tưởng), Phước(biên tập, ý tưởng), Hoàn(nội dung).</li>
+                </ul>
             </section>
         </div>
     </main>
