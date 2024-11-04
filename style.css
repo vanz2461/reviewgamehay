@@ -142,3 +142,6 @@ h6 {
   display: block;
   padding: 10px;
 }
+hr {
+    border-bottom: 5px solid black; /* Độ dày 5px, màu đen */
+}
