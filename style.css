@@ -11,6 +11,7 @@ body {
 .menu {
     height: 64px;
     background-color: #0084ff;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -72,21 +73,19 @@ h6 {
     margin: 20px 0;
     font-size: 27px;
 }
+
 .item-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .item-image1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.item-image2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .text-member {
     margin: 20px 0;
@@ -95,6 +94,13 @@ h6 {
     align-items: center;
     justify-content: center;
 }
+
+.item-image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .muc_luc {
     padding-left: 0;
     margin: 20px 0;
@@ -142,6 +148,7 @@ h6 {
   display: block;
   padding: 10px;
 }
+
 .dong_ke {
-    border-bottom: 5px solid black; /* Độ dày 5px, màu đen */
-}
+    border-bottom: 5px solid black;
+  }
